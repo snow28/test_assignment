@@ -11,6 +11,55 @@ $white : rgb(255,255,255)
 .phoneNumber
   font-family: 'Open Sans', sans-serif
 
+.popup-window
+  font-family: 'PT Sans', sans-serif
+  color: $darkgray
+  z-index: 999
+  min-width: 100%
+  min-height: 100%
+  position: fixed
+  display: none
+  padding-top: 250px
+  text-align: center
+  background-color: rgba(0,0,0,0.7)
+  &-active
+    display: block
+  &__form
+    margin: auto
+    background-color: $white
+    width: 470px
+    min-width: 240px
+    height: 600px
+    textarea
+      resize: none
+      min-height: 260px
+      width: 340px
+  &__input
+    width: 340px
+    height: 40px
+    margin-bottom: 10px
+  &__header
+    font-size: 24px
+    margin-bottom: 20px
+    padding-top: 15px
+    font-weight: bold
+  &__submit
+    background-color: $darkgray
+    color: white
+    max-width: 130px
+    position: static
+    bottom: 220px
+  &__input-email
+    margin-bottom: -3px
+  &__close
+    position: relative
+    top: 3px
+    left: 248px
+
+
+
+
+
 .main-wrapper
   font-family: 'PT Sans', sans-serif
   width: 100%
@@ -60,23 +109,6 @@ $white : rgb(255,255,255)
           color: white
           border-bottom: 2px dashed white
 
-
-.popup-window
-  z-index: 999
-  min-width: 100%
-  min-height: 100%
-  position: fixed
-  top: 50vh
-  top: 0px
-  background-color: rgba(100,100,100,0.4)
-  display: none
-  &-active
-    display: block
-  &__form
-    background-color: $white
-    width: 470px
-    min-width: 240px
-    height: 600px
 
 .menu
   width: 100%
@@ -369,16 +401,19 @@ $white : rgb(255,255,255)
   .phoneNumber
     font-size: 14px
   .header
+    height: 130px
     &__name
+      margin-top: 25px
       p
         padding-bottom: 0px
     &__logo
       margin-left: 10px
       width: 70px
       height: 70px
+      margin-top: 25px
     &__contacts
-      padding-left: 50px
-      padding-top: 70px
+      padding-left: 90px
+      padding-top: 30px
     &__contacts_callback
       margin-left: 2%
       font-size: 15px
