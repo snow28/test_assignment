@@ -60,6 +60,24 @@ $white : rgb(255,255,255)
           color: white
           border-bottom: 2px dashed white
 
+
+.popup-window
+  z-index: 999
+  min-width: 100%
+  min-height: 100%
+  position: fixed
+  top: 50vh
+  top: 0px
+  background-color: rgba(100,100,100,0.4)
+  display: none
+  &-active
+    display: block
+  &__form
+    background-color: $white
+    width: 470px
+    min-width: 240px
+    height: 600px
+
 .menu
   width: 100%
   background-color: $darkgray
@@ -378,11 +396,9 @@ $white : rgb(255,255,255)
     right: 15px
   .slick-prev
     left: 15px
-
   .root
     font-size: 10px
     padding-top: 5px
-
   .content
     &__main
       margin-top: 50px

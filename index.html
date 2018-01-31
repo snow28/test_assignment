@@ -13,6 +13,25 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div class="popup-window">
+        <div class="popop-window__content">
+            <form class="popup-window__form">
+                Ваше имя *<br>
+                <input type="text" name="firstname" value="Mickey"><br>
+                Телефон *<br>
+                <input type="text" name="lastname" value="Mouse"><br><br>
+                Email *<br>
+                <input type="text" name="firstname" value="Mickey"><br>
+                Сообщение<br>
+                <textarea type="text" name="lastname" value="Mouse"></textarea><br><br>
+                    <input type="submit" value="Submit">
+
+            </form>
+            <a href="#" id="button-popup-close">Close</a>
+        </div>
+    </div>
+
+
     <div class="main-wrapper">
 
 
@@ -27,7 +46,7 @@
             <div class="header__contacts">
                 <p class="phoneNumber">+7(499)777-77-77</p>
                 <p class="phoneNumber">+7(499)777-77-77</p>
-                <p class="header__contacts_callback"><a href="#">Обратная связь</a></p>
+                <p class="header__contacts_callback"><a href="#" class="header__popup-js">Обратная связь</a></p>
             </div>
         </header>
 
@@ -45,12 +64,14 @@
 
 
         <div class="slider">
-            <div class="your-class">
+            <div class="slider__wrapper slider__wrapper-js">
                 <div><img src="http://www.themepunch.com/home/wp-content/uploads/2014/07/unlimited_height_5.jpg"></div>
                 <div><img src="https://bstro-82d3.kxcdn.com/wp-content/uploads/2017/06/Splenda_fullwidth_collage_1400px_v3.jpg"></div>
                 <div><img src="img/slider-1.jpg"></div>
             </div>
         </div>
+
+
         <div class="root">
             <ul class="root__list">
                 <li class="root__list-item"><a href="#">Главная</a> /</li>
@@ -66,10 +87,10 @@
                 <a class="content__menu-item" href="#">Автомобили</a>
                 <a class="content__menu-item content__menu-item-active" href="#">Бытовая техника</a>
                 <ul class="content__submenu">
-                    <li class="content__submenu-item content__submenu-item-active"><a href="#">Микроволновки</a></li>
+                    <li class="content__submenu-item"><a href="#">Микроволновки</a></li>
                     <li class="content__submenu-item"><a href="#">Холодильники</a></li>
                     <li class="content__submenu-item"><a href="#">Посудомоечные машины</a></li>
-                    <li class="content__submenu-item"><a href="#">Чайники</a></li>
+                    <li class="content__submenu-item content__submenu-item-active"><a href="#">Чайники</a></li>
                 </ul>
                 <a class="content__menu-item" href="#">Мобильная техника</a>
                 <a class="content__menu-item" href="#">Компьютеры</a>
